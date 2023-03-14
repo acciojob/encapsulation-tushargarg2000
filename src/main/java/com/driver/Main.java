@@ -3,14 +3,13 @@ package com.driver;
 public class Main {
     public static void main(String[] args){
 
-        RWOnly obj  = new RWOnly();
+        RWOnly obj = new RWOnly();
 
-        //'name' has private access in 'com.driver.RWOnly'
-        //obj.name = "Tushar";
+        obj.setName("Tushar");
 
-        obj.setName("Rauch");
+        String ans = obj.getName();
+        System.out.println(ans);
 
-        System.out.println(obj.getName());
     }
   
 }
